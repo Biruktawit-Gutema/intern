@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - InternPath</title>
+    <!-- ?<link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <div class="header">
+                <h2>Welcome back</h2>
+                <p>Enter your details to access your account</p>
+            </div>
+            <form class="main">
+                <div class="group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="e.g. alex@example.com" required>
+                </div>
+
+                <div class="group">
+                    <label>Password</label>
+                    <input type="password" placeholder=".........." minlength="6" required>
+                </div>
+
+                <button type="submit"><a href="/index.html">Login to Account</a></button>
+            </form>
+            <div class="divider">
+                <span>----Or continue with-----</span>
+            </div>
+            <div class="social">
+                <button >
+                    <img src="https://www.google.com/favicon.ico" alt="Google" width="16" height="16">
+                    Google
+                </button>
+                <button >
+                    <img src="https://github.com/favicon.ico" alt="Github" width="16" height="16">
+                    Github
+                </button>
+            </div>
+            <div class="footer">
+                <p>Don't have an account?</p>
+                <a href="./signup.html">Create Account</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
