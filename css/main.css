@@ -417,11 +417,12 @@ h1 {
     .interplace {
         /* align-items: center; */
         gap: 5px;
+        margin: 10px;
     }
 }
 @media (max-width: 768px) {
     .readmore {
-        margin: -40px 205px 0 0;
+        margin: -40px 200px 0 0;
     }
 }
 /* ==================== */
