@@ -411,6 +411,7 @@ h1 {
     margin: -50px 220px 0px 0;
     color: var(--brand-600);
     font-size: 30px;
+    cursor: pointer;
 }
 @media (max-width: 768px) {
     .interplace {
