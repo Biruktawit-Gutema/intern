@@ -415,8 +415,8 @@ h1 {
 @media (max-width: 768px) {
     .interplace {
         /* align-items: center; */
-        gap: 0px;
-        margin: 10px;
+        gap: 10px;
+        margin: 0px;
 
     }
 }
