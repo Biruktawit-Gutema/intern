@@ -412,7 +412,16 @@ h1 {
     color: var(--brand-600);
     font-size: 30px;
 }
+@media (max-width: 768px) {
+    .interplace {
+        align-items: center;
+        gap: 5px;
+        margin: 10px;
 
+    }
+}
+
+/* ==================== */
 .internfilter {
     display: flex;
     gap: 20px;
