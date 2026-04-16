@@ -137,6 +137,7 @@ body {
     }
     .post {
         align-items: center;
+        /* display: none; */
     }
 }
 
