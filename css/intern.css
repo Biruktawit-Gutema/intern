@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -144,7 +144,7 @@ body {
     border-radius: 12px;
     padding: 20px;
     display: grid;
-    grid-template-columns: 64px 1fr auto;
+    grid-template-columns: 64px 90% auto;
     gap: 20px;
     align-items: center;
 
@@ -153,10 +153,11 @@ body {
     border-left: 5px solid var(--brand-600);
 }
 .internlist {
-    display: contents;
+    display: flex;
+    gap: 20px;
 }
 .internlist img{
-    width: 64px;
+    width: 80px;
     height: 64px;
     border-radius: 8px;
     display: flex;
@@ -164,6 +165,7 @@ body {
     justify-content: center;
     background: #f1f5f9;
     padding: 8px;
+    margin: 10px;
 }
 /* .data{
     display: flex;
@@ -187,6 +189,7 @@ body {
 .type ul{
     list-style: none;
     display: flex;
+    flex-direction: row;
     gap: 8px;
     margin: 0;
     padding: 0;
