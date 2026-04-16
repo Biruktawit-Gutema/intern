@@ -121,6 +121,24 @@ body {
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+    .card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .internlist img {
+        margin: 0 auto;
+    }
+    .type ul {
+        justify-content: center;
+    }
+    .post {
+        align-items: center;
+    }
+}
 
 
 .detail{
