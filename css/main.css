@@ -416,7 +416,6 @@ h1 {
     .interplace {
         /* align-items: center; */
         gap: 5px;
-        margin: 0px;
     }
 }
 @media (max-width: 768px) {
