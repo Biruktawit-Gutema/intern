@@ -521,11 +521,18 @@ ul .more a{
 
 /* ====================================================== */
 footer{
-    padding: 40px 0;
     border-top: 1px solid var(--slate-100);
     background: #f8fafc;
 }
-
+.hero {
+    padding: 80px 0;
+    /* background: rgb(172, 255, 172); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 
 .footergrid{
     padding: 40px 0;
