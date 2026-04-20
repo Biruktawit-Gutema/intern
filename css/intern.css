@@ -98,7 +98,7 @@ header {
 }
 .profileicon {
     font-size: 25px;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 
@@ -107,7 +107,7 @@ header {
         display: none;
     }
 
-    .searchbox {
+    .navbar .searchbox {
         display: none;
     }
    
@@ -233,14 +233,13 @@ header {
     background: #f8fafc;
     border: #475569;
     border: 1px solid var(--border);
-    border-left: 5px solid var(--brand-600);
     border-radius: 12px;
     padding: 20px;
     display: grid;
     grid-template-columns: 64px 90% auto;
     gap: 20px;
     align-items: center;
-
+    /* border: 1px solid var(--slate-600); */
 }
 .card:hover{
     border-left: 5px solid var(--brand-600);
@@ -349,21 +348,74 @@ header {
     .filteritems {
         display: none;
     }
+    .content {
+        padding: 20px;
+    }
     .card {
-        grid-template-columns: 100%;
+        grid-template-columns: 90%;
+        text-align: center;
         gap: 12px;
     }
     .internlist {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .internlist img {
+        margin: 0 auto;
+        width: 100px;
+        height: 64px;
+        padding: 8px;
+    }
+    .data h3{
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .data p {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .type ul{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 8px;
+    }
+
+    .type ul li{
+        padding: 2px;
+        background: var(--slate-100);
+        border-radius: 4px;
+        font-size: 8px;
     }
     .action {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
     }
+    .action{
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 0;
 }
 
+.action p{
+    font-size: 7px;
+}
+
+.action button {
+    padding: 5px 12px;
+}
+
+
+.anchorbtn {
+    padding: 5px 12px;
+    font-weight: 600;
+    font-size: 10px;
+}
+}
 
 
 /* ====================================================== */
