@@ -438,3 +438,17 @@ footer{
     color: var(--slate-600);
     font-size: 18px;
 }
+
+@media (max-width: 768px) {
+    .footergrid {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    .footercontact {
+        margin: 0;
+    }
+    .sociallinks {
+        justify-content: center;
+        margin: 20px 0;
+    }
+}
