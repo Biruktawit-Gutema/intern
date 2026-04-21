@@ -74,6 +74,10 @@ body {
     background-color: rgb(215, 255, 215);
     border-radius: 6px;
 }
+.menu ul li a{
+    text-decoration: none;
+    color: var(--slate-600);
+}
 .maincontent {
     background: white;
     margin: 0;
@@ -227,11 +231,34 @@ table td {
     font-size: 18px;
 }
 
-.employeetables td button{
+.employeetables .check {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 4px;
+    justify-content: space-between;
+    gap: 15px;
+    max-width: 150px;
+}
+.employeetables .check button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+.employeetables .check .edit {
+    color: var(--brand-600);
+    font-size: 22px;
+}
 
-    border: 1px solid #333;
+.employeetables .check button:hover {
+    border: 1px solid var(--brand-600);
+}
+.employeetables .check .delete {
+    color: #f40000;
+    font-size: 22px;
 }
