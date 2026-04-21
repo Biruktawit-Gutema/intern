@@ -17,14 +17,14 @@
             <div class="menu">
                 <ul>
                     <li><span class="material-symbols-outlined">dashboard</span> <a href="#admin">Dashboard</a></li>
-                    <li><span class="material-symbols-outlined">wc</span> Students</li>
-                    <li><span class="material-symbols-outlined">work</span> Employees</li>
+                    <li><span class="material-symbols-outlined">wc</span> <a href="#students">Students</a></li>
+                    <li><span class="material-symbols-outlined">work</span> <a href="#employees">Employees</a></li>
                     <li><span class="material-symbols-outlined">settings</span> Settings</li>
                     <li><span class="material-symbols-outlined">logout</span> Logout</li>
                 </ul>
             </div>
         </div>
-        <div class="main-content">
+        <div class="maincontent">
             <div class="dashboard" id="admin">
             <div class="header">
                 <h1>Admin Dashboard</h1>
@@ -95,11 +95,7 @@
                                 <td>20</td>
                                 <td>2 days ago</td>
                             </tr>
-                            <tr>
-                                <td>1,500</td>
-                                <td>80</td>
-                                <td>3 days ago</td>
-                            </tr>
+                            
                         </tbody>
                     </table>
                  </div>
@@ -107,36 +103,43 @@
         </div>
 
 
-        <div class="student">
+        <div class="students" id="students">
             <div class="header">
                 <h1>Students</h1>
             </div>
             <div class="content">
                 <!-- Main content goes here -->
                  <div class="card">
-                    <div class="card-content">
+                    <div class="cardcontent">
                         <span class="material-symbols-outlined">chart_data</span>
+                        <div class="carddata">
                         <h3>Total Students</h3>
                         <p>1,000</p>
+                        </div>
                     </div>
-                    <div class="card-content">
+                    <div class="cardcontent">
                         <span class="material-symbols-outlined">wc</span>
-                        <h3>Verified Students</h3>
-                        <p>1,000</p>
+                        <div class="carddata">
+                            <h3>Verified Students</h3>
+                            <p>1,000</p>
+                        </div>
                     </div>
-                    <div class="card-content">
+                    <div class="cardcontent">
                         <span class="material-symbols-outlined">work</span>
-                        <h3>Unverified Students</h3>
-                        <p>200</p>
+                        <div class="carddata">
+                            <h3>Unverified Students</h3>
+                            <p>200</p>
+                        </div>
                     </div>
                  </div>
-                 <div>
-                    <h2>Recent Students</h2>
-                    <search>
+                 <div class="recent">
+                    <h3>Recent Students...</h3>
+                    <div class="search">
+                        <span class="material-symbols-outlined icon">search</span>
                         <input type="text" placeholder="Search students...">
-                    </search>
+                    </div>
                  </div>
-                 <div>
+                 <div class="studentstable">
                     <table>
                         <thead>
                             <tr>
@@ -164,42 +167,49 @@
                  </div>
             </div>
         </div>
-        <div class="employee">
+        <div class="employees" id="employees">
             <div class="header">
                 <h1>Employees</h1>
             </div>
             <div class="content">
                 <!-- Main content goes here -->
                  <div class="card">
-                    <div class="card-content">
+                    <div class="cardcontent">
                         <span class="material-symbols-outlined">chart_data</span>
-                        <h3>Total Employees</h3>
-                        <p>1,000</p>
+                        <div class="carddata">
+                            <h3>Total Employees</h3>
+                            <p>1,000</p>
+                        </div>
                     </div>
-                    <div class="card-content">
+                    <div class="cardcontent">
                         <span class="material-symbols-outlined">wc</span>
-                        <h3>Verified Employees</h3>
-                        <p>1,000</p>
+                        <div class="carddata">
+                            <h3>Verified Employees</h3>
+                            <p>1,000</p>
+                        </div>
                     </div>
-                    <div class="card-content">
+                    <div class="cardcontent">
                         <span class="material-symbols-outlined">work</span>
-                        <h3>Unverified Employees</h3>
-                        <p>200</p>
+                        <div class="carddata">
+                            <h3>Unverified Employees</h3>
+                            <p>200</p>
+                        </div>
                     </div>
                  </div>
-                 <div>
-                    <h2>Recent Employees</h2>
-                    <search>
+                 <div class="recent">
+                    <h3>Recent Employees</h3>
+                    <div class="search">
+                        <span class="material-symbols-outlined icon">search</span>
                         <input type="text" placeholder="Search employees...">
-                    </search>
+                    </div>
                  </div>
-                 <div>
+                 <div class="employeetables">
                     <table>
                         <thead>
                             <tr>
                                 <th>Name</th>
                                 <th>Company Email</th>
-                                <th>Status</th> (progress, prove, reject)
+                                <th>Status</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -209,8 +219,8 @@
                                 <td>nasa@example.com</td>
                                 <td>progress</td>
                                 <td>
-                                    <button>Edit</button>
-                                    <button>Delete</button>
+                                    <button><span class="material-symbols-outlined">edit</span>Edit</button>
+                                    <button><span class="material-symbols-outlined">delete</span>Delete</button>
                                 </td>
                             </tr>
                             <tr>
@@ -218,8 +228,8 @@
                                 <td>spacex@example.com</td>
                                 <td>prove</td>
                                 <td>
-                                    <button>Edit</button>
-                                    <button>Delete</button>
+                                    <button><span class="material-symbols-outlined edit">edit</span>Edit</button>
+                                    <button><span class="material-symbols-outlined delete">delete</span>Delete</button>
                                 </td>
                             </tr>
                         </tbody>

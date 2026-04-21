@@ -74,16 +74,19 @@ body {
     background-color: rgb(215, 255, 215);
     border-radius: 6px;
 }
-.main-content {
+.maincontent {
     background: white;
-    padding: 0 20px;
     margin: 0;
 }
-
+.dashboard {
+    border-radius: 8px;
+    min-height: 100vh;
+}
 
 .content {
     background: white;
     margin: 0;
+    padding: 0 20px;
 }
 
 .header {
@@ -173,12 +176,12 @@ body {
     cursor: pointer;
 }
 
-.admintables table {
+table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
-.admintables th {
+table th {
     text-align: left;
     padding: 12px;
     background: var(--slate-100);
@@ -186,7 +189,49 @@ body {
     font-size: 14px;
     font-weight: 600;
 }
-.admintables td {
+table td {
     padding: 12px;
     border-bottom: 1px solid var(--slate-100);
+}
+
+.students {
+    min-height: 100vh;
+}
+
+.employees {
+    min-height: 100vh;
+}
+
+.search{
+    border: 1px solid var(--slate-600);
+    border-radius: 4px;
+    background: var(--slate-100);
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search input {
+    border: none;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    padding: 4px 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--slate-600);
+}
+.search .icon {
+    color: var(--slate-600);
+    font-size: 18px;
+}
+
+.employeetables td button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+
+    border: 1px solid #333;
 }
