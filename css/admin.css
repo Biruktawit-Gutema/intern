@@ -1,0 +1,192 @@
+/* Base Styles */
+:root {
+    --brand-600: #16a34a;
+    --brand-700: #15803d;
+    --slate-900: #0f172a;
+    --slate-600: #475569;
+    --slate-100: #f1f5f9;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--slate-900);
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* ====================================================================== */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 1px;
+    background: var(--slate-100);
+}
+.sidebar {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-right: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--slate-600);
+    border-radius: 10px;
+}
+.logo img {
+    height: 50px;
+    margin: 20px;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.menu ul li span{
+    color: var(--slate-600);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 10px;
+}
+.menu ul li {
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.menu ul li:hover{
+    color: var(--brand-600);
+    background-color: rgb(215, 255, 215);
+    border-radius: 6px;
+}
+.main-content {
+    background: white;
+    padding: 0 20px;
+    margin: 0;
+}
+
+
+.content {
+    background: white;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--slate-600);
+}
+.header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-left: 50px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.content .card .cardcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--slate-100);
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 20px;
+    border-bottom: 5px solid var(--brand-600);
+}
+
+.cardcontent span{
+    font-size: 40px;
+    color: var(--slate-600);
+    padding: 0;
+}
+.carddata h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.carddata p{
+    color: var(--slate-600);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4px;
+    text-align: end;
+}
+
+.recent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px ;
+}
+
+
+.recent h3 {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin: 0px;
+    padding: 0;
+}
+
+.recent button {
+    background: var(--brand-600);
+    padding: 9px 25px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.admintables table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.admintables th {
+    text-align: left;
+    padding: 12px;
+    background: var(--slate-100);
+    color: var(--slate-600);
+    font-size: 14px;
+    font-weight: 600;
+}
+.admintables td {
+    padding: 12px;
+    border-bottom: 1px solid var(--slate-100);
+}
